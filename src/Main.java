@@ -35,21 +35,21 @@ public class Main {
 
         System.out.println("Задача 4");
         byte machinePerformanceIn2Minutes = 16;
-        int MachinePerformanceIn20Minutes = machinePerformanceIn2Minutes * 10;
-        System.out.println("За 20 минут машина произвела "+MachinePerformanceIn20Minutes +" штук бутылок.»");
-        int machineOutputPer1Hour = MachinePerformanceIn20Minutes * 3;
+        int machinePerformanceIn20Minutes = machinePerformanceIn2Minutes * 10;
+        System.out.println("За 20 минут машина произвела "+machinePerformanceIn20Minutes +" штук бутылок.»");
+        int machineOutputPer1Hour = machinePerformanceIn20Minutes * 3;
         int machineThroughputIn1Day = machineOutputPer1Hour * 24;
         System.out.println("За 1 день машина произвела "+machineThroughputIn1Day +" штук бутылок.»");
-        int MachinePerformanceIn3Days = machineThroughputIn1Day * 3;
-        System.out.println("За 3 дня машина произвела "+MachinePerformanceIn3Days +" штук бутылок.»");
-        int MachineProductivityFor1Month = machineThroughputIn1Day * 31;
-        System.out.println("За 1 месяц машина произвела "+MachineProductivityFor1Month +" штук бутылок.»");
+        int machinePerformanceIn3Days = machineThroughputIn1Day * 3;
+        System.out.println("За 3 дня машина произвела "+machinePerformanceIn3Days +" штук бутылок.»");
+        int machineProductivityFor1Month = machineThroughputIn1Day * 31;
+        System.out.println("За 1 месяц машина произвела "+machineProductivityFor1Month +" штук бутылок.»");
 
         System.out.println("Задача 5");
-        byte TotalPaint = 120;
+        byte totalPaint = 120;
         byte whitePaintFor1Room = 2;
         byte brownPaintFor1Room = 4;
-        int numberOfRooms = TotalPaint / (whitePaintFor1Room + brownPaintFor1Room);
+        int numberOfRooms = totalPaint / (whitePaintFor1Room + brownPaintFor1Room);
         int amountOfWhitePaint = numberOfRooms * whitePaintFor1Room;
         int amountOfBrownPaint = numberOfRooms * brownPaintFor1Room;
         System.out.println("В школе, где "+numberOfRooms +" классов, нужно "+amountOfWhitePaint +" банок белой краски и "+amountOfBrownPaint +" банок коричневой краски.");
@@ -59,11 +59,11 @@ public class Main {
         int bananaWeight = bananas * 80;
         short milk = 200;
         int milkWeight = (milk / 100) * 105;
-        byte IceCream = 2;
-        int IceCreamWeight = IceCream * 100;
+        byte iceCream = 2;
+        int iceCreamWeight = iceCream * 100;
         short egg = 4;
         int eggWeight = egg * 70;
-        int totalWeightInGrams = bananaWeight + milkWeight + IceCreamWeight + eggWeight;
+        int totalWeightInGrams = bananaWeight + milkWeight + iceCreamWeight + eggWeight;
         System.out.println("Общий вес продуктов равен "+totalWeightInGrams +" грамм.");
         float totalWeightInKilograms = totalWeightInGrams / 1000f;
         System.out.println("Общий вес продуктов равен "+totalWeightInKilograms +" килограмм.");
